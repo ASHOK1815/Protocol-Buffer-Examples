@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package test_proto;
+
+option java_multiple_files = true;
+option java_package = "com.example.tutorial.protos";
+option java_outer_classname = "UserProtos";
+
+message User {
+    int32 Id = 1;
+    string name = 2;
+    string password = 3;
+    int64 contactNumber = 4;
+}
+
+
+message Users {
+    repeated User users = 1;  
+}
